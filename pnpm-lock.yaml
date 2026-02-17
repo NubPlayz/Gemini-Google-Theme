@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@plasmohq/storage':
+        specifier: ^1.15.0
+        version: 1.15.0(react@18.2.0)
       plasmo:
         specifier: 0.90.5
         version: 0.90.5(@swc/core@1.15.11(@swc/helpers@0.5.18))(@swc/helpers@0.5.18)(@types/node@20.11.5)(postcss@8.5.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -36,6 +39,9 @@ importers:
       prettier:
         specifier: 3.2.4
         version: 3.2.4
+      sharp:
+        specifier: ^0.33.5
+        version: 0.33.5
       typescript:
         specifier: 5.3.3
         version: 5.3.3
@@ -1246,6 +1252,14 @@ packages:
   '@plasmohq/parcel-transformer-vue@0.5.0':
     resolution: {integrity: sha512-/3oVbajt+DRqtbM0RkKFtfyZR8DVjcsYpj1jHqPParGVBiXwgP0D/8Bj5p5/5Iqihs08gzasTcjKcwQKKdj0og==}
     engines: {parcel: '>= 2.7.0'}
+
+  '@plasmohq/storage@1.15.0':
+    resolution: {integrity: sha512-zBZ2NyVyvZlql2XHsjkZDL0+bqF6lir9RygeTnkYGF253M8DZttuSvjpsmpK6OWYmRXjhEqJeubd3+Zq9kuZ0w==}
+    peerDependencies:
+      react: ^16.8.6 || ^17 || ^18 || ^19.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
 
   '@pnpm/config.env-replace@1.1.0':
     resolution: {integrity: sha512-htyl8TWnKL7K/ESFa1oW2UB5lVDxuF5DpM7tBi6Hu2LNL3mWkIzNLG6N4zoCUP1lCKNxWy/3iu8mS8MvToGd6w==}
@@ -2557,6 +2571,10 @@ packages:
     resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
     engines: {node: '>=6'}
 
+  pify@6.1.0:
+    resolution: {integrity: sha512-KocF8ve28eFjjuBKKGvzOBGzG8ew2OqOOSxTTZhirkzH7h3BI1vyzqlR0qbfcDBve1Yzo3FVlWUAtCRrbVN8Fw==}
+    engines: {node: '>=14.16'}
+
   pirates@4.0.7:
     resolution: {integrity: sha512-TfySrs/5nm8fQJDcBDuUng3VOUKsd7S+zqvbOTiGXHfxX4wK31ard+hoNuvkicM/2YFzlpDgABOevKSsB4G/FA==}
     engines: {node: '>= 6'}
@@ -3600,7 +3618,7 @@ snapshots:
       json5: 2.2.3
       msgpackr: 1.11.8
       nullthrows: 1.1.1
-      semver: 7.7.1
+      semver: 7.7.4
 
   '@parcel/diagnostic@2.8.3':
     dependencies:
@@ -3686,7 +3704,7 @@ snapshots:
       '@parcel/fs': 2.9.3(@parcel/core@2.9.3)
       '@parcel/utils': 2.9.3
       nullthrows: 1.1.1
-      semver: 7.7.1
+      semver: 7.7.4
     transitivePeerDependencies:
       - '@parcel/core'
 
@@ -3779,7 +3797,7 @@ snapshots:
       '@parcel/types': 2.9.3(@parcel/core@2.9.3)
       '@parcel/utils': 2.9.3
       '@parcel/workers': 2.9.3(@parcel/core@2.9.3)
-      semver: 7.7.1
+      semver: 7.7.4
 
   '@parcel/packager-css@2.9.3(@parcel/core@2.9.3)':
     dependencies:
@@ -3920,7 +3938,7 @@ snapshots:
       browserslist: 4.28.1
       json5: 2.2.3
       nullthrows: 1.1.1
-      semver: 7.7.1
+      semver: 7.7.4
     transitivePeerDependencies:
       - '@parcel/core'
 
@@ -3953,7 +3971,7 @@ snapshots:
       posthtml: 0.16.7
       posthtml-parser: 0.10.2
       posthtml-render: 3.0.0
-      semver: 7.7.1
+      semver: 7.7.4
       srcset: 4.0.0
     transitivePeerDependencies:
       - '@parcel/core'
@@ -3984,7 +4002,7 @@ snapshots:
       browserslist: 4.28.1
       nullthrows: 1.1.1
       regenerator-runtime: 0.13.11
-      semver: 7.7.1
+      semver: 7.7.4
 
   '@parcel/transformer-json@2.9.3(@parcel/core@2.9.3)':
     dependencies:
@@ -4010,7 +4028,7 @@ snapshots:
       clone: 2.1.2
       nullthrows: 1.1.1
       postcss-value-parser: 4.2.0
-      semver: 7.7.1
+      semver: 7.7.4
     transitivePeerDependencies:
       - '@parcel/core'
 
@@ -4022,7 +4040,7 @@ snapshots:
       posthtml: 0.16.7
       posthtml-parser: 0.10.2
       posthtml-render: 3.0.0
-      semver: 7.7.1
+      semver: 7.7.4
     transitivePeerDependencies:
       - '@parcel/core'
 
@@ -4067,7 +4085,7 @@ snapshots:
       posthtml: 0.16.7
       posthtml-parser: 0.10.2
       posthtml-render: 3.0.0
-      semver: 7.7.1
+      semver: 7.7.4
     transitivePeerDependencies:
       - '@parcel/core'
 
@@ -4505,6 +4523,12 @@ snapshots:
       - velocityjs
       - walrus
       - whiskers
+
+  '@plasmohq/storage@1.15.0(react@18.2.0)':
+    dependencies:
+      pify: 6.1.0
+    optionalDependencies:
+      react: 18.2.0
 
   '@pnpm/config.env-replace@1.1.0': {}
 
@@ -5689,7 +5713,7 @@ snapshots:
       ky: 1.14.3
       registry-auth-token: 5.1.1
       registry-url: 6.0.1
-      semver: 7.7.1
+      semver: 7.7.4
 
   parent-module@1.0.1:
     dependencies:
@@ -5722,6 +5746,8 @@ snapshots:
 
   pify@4.0.1:
     optional: true
+
+  pify@6.1.0: {}
 
   pirates@4.0.7: {}
 
@@ -5964,7 +5990,7 @@ snapshots:
     dependencies:
       color: 4.2.3
       detect-libc: 2.1.2
-      semver: 7.7.1
+      semver: 7.7.4
     optionalDependencies:
       '@img/sharp-darwin-arm64': 0.33.5
       '@img/sharp-darwin-x64': 0.33.5

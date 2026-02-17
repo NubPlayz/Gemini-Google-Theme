@@ -1,15 +1,16 @@
 {
   "name": "gemini-google-theme",
-  "displayName": "Gemini google theme",
+  "displayName": "Gemini Google Theme",
   "version": "0.0.1",
-  "description": "A basic Plasmo extension.",
-  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "description": "Brings a Google-inspired AI theme to Gemini with animated rainbow accents and a clean toggle control.",
+  "author": "Nub",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
     "package": "plasmo package"
   },
   "dependencies": {
+    "@plasmohq/storage": "^1.15.0",
     "plasmo": "0.90.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -21,11 +22,24 @@
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
     "prettier": "3.2.4",
+    "sharp": "^0.33.5",
     "typescript": "5.3.3"
   },
+  "icon": "assets/icon.png",
   "manifest": {
+    "short_name": "Gemini Google Theme",
     "host_permissions": [
-      "https://*/*"
-    ]
+      "https://gemini.google.com/*"
+    ],
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "gemini-google-theme@nub.dev",
+        "strict_min_version": "142.0",
+        "data_collection_permissions": {
+          "required": ["none"],
+          "optional": []
+        }
+      }
+    }
   }
 }

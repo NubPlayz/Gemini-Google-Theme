@@ -1,26 +1,28 @@
-import { useState } from "react"
+import { useStorage } from "@plasmohq/storage/hook"
 
-function IndexPopup() {
-  const [data, setData] = useState("")
+import "./popup.css"
+
+function Popup() {
+  const [enabled, setEnabled] = useStorage<boolean>("theme-enabled", true)
 
   return (
-    <div
-      style={{
-        padding: 16
-      }}>
-      <h2>
-        Welcome to your{" "}
-        <a href="https://www.plasmo.com" target="_blank">
-          Plasmo
-        </a>{" "}
-        Extension!
-      </h2>
-      <input onChange={(e) => setData(e.target.value)} value={data} />
-      <a href="https://docs.plasmo.com" target="_blank">
-        View Docs
-      </a>
+    <div className="popup-container">
+      <h1 className="title">Google AI Theme</h1>
+
+      <div className="toggle-row">
+        <span className="toggle-label">Enable Theme</span>
+
+        <label className="switch">
+          <input
+            type="checkbox"
+            checked={enabled}
+            onChange={(e) => setEnabled(e.target.checked)}
+          />
+          <span className="slider"></span>
+        </label>
+      </div>
     </div>
   )
 }
 
-export default IndexPopup
+export default Popup
