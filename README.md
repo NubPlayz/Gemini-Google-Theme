@@ -1,33 +1,42 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# Gemini Google Theme
 
-## Getting Started
+A lightweight browser extension that brings a Google-inspired AI visual style to Gemini.
 
-First, run the development server:
+It enhances the interface with subtle animated rainbow accents, a styled input dialog, and a clean toggle control — without changing how Gemini works.
 
-```bash
-pnpm dev
-# or
-npm run dev
-```
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
+## ✨ Features
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
+- Google brand color accents (Blue, Red, Yellow, Green)
+- Animated rainbow border when sending a message
+- Subtle top “thinking” rainbow bar
+- Clean UI refinements
+- Toggle on/off from popup
+- Lightweight and performance-friendly
 
-## Making production build
 
-Run the following:
 
-```bash
-pnpm build
-# or
-npm run build
-```
+<img width="1183" height="249" alt="promo4" src="https://github.com/user-attachments/assets/c2381bf4-3170-46b4-b97a-f6ab96dd3c5c" />
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
 
-## Submit to the webstores
+<img width="1832" height="912" alt="promotion_tile" src="https://github.com/user-attachments/assets/973105c0-58b8-4e8d-bba1-4627d8a29f28" />
 
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+## 🛠 Tech Stack
+
+- Plasmo (Manifest V3)
+- React (Popup UI)
+- TypeScript
+- CSS
+- MutationObserver for dynamic UI handling
+
+
+
+## 🚀 Development
+
+Clone the repository and install dependencies:
+
+```bas
+pnpm install
+
+
