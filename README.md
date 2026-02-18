@@ -20,6 +20,8 @@ It enhances the interface with subtle animated rainbow accents, a styled input d
 <img width="1183" height="249" alt="promo4" src="https://github.com/user-attachments/assets/c2381bf4-3170-46b4-b97a-f6ab96dd3c5c" />
 
 
+
+
 <img width="1832" height="912" alt="promotion_tile" src="https://github.com/user-attachments/assets/973105c0-58b8-4e8d-bba1-4627d8a29f28" />
 
 ## 🛠 Tech Stack
@@ -38,5 +40,7 @@ Clone the repository and install dependencies:
 
 ```bas
 pnpm install
+
+pnpm dev
 
 
