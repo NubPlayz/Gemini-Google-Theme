@@ -8,10 +8,14 @@
 ![Chrome](https://img.shields.io/badge/Chrome-Compatible-4285F4?logo=googlechrome&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
+
 A lightweight browser extension that brings a Google-inspired AI visual style to Gemini.
 
 It enhances the interface with subtle animated rainbow accents, a styled input dialog, and a clean toggle control — without changing how Gemini works.
 
+Here's the link to use it in Firefox 
+
+https://addons.mozilla.org/en-US/firefox/addon/gemini-google-theme/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 
 
 ## Features
